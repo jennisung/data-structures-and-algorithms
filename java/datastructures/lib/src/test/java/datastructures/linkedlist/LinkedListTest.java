@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-public class LinkedListTest
-{
-  @Test public void emptyLinkedList() {
+public class LinkedListTest {
+  @Test
+  public void emptyLinkedList() {
     LinkedList linkedList = new LinkedList();
     assertEquals("null", linkedList.toString());
   }
@@ -68,8 +68,7 @@ public class LinkedListTest
     assertEquals("{ 15 } -> { 10 } -> { 5 } -> null", linkedList.toString());
   }
 
-  @Test
-  public void appendNodeToEnd() {
+  @Test public void appendNodeToEnd() {
     LinkedList linkedList = new LinkedList();
     linkedList.insert(5);
     linkedList.insert(10);
@@ -77,8 +76,53 @@ public class LinkedListTest
     assertEquals("{ 10 } -> { 5 } -> { 15 } -> null", linkedList.toString());
   }
 
+  @Test public void appendMultipleNodesAtEnd() {
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(5);
+    linkedList.append(10);
+    linkedList.append(15);
+    assertEquals("{ 5 } -> { 10 } -> { 15 } -> null", linkedList.toString());
+  }
 
 
-}
+  @Test public void insertBeforeANode() {
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(5);
+    linkedList.insert(10);
+    linkedList.insert(15);
+    linkedList.insertBefore(10, 8);
+    assertEquals("{ 15 } -> { 8 } -> { 10 } -> { 5 } -> null", linkedList.toString());
+  }
+
+  @Test public void insertBeforMiddle() {
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(5);
+    linkedList.insert(10);
+    linkedList.insert(15);
+    linkedList.insertBefore(10, 8);
+    assertEquals("{ 15 } -> { 8 } -> { 10 } -> { 5 } -> null", linkedList.toString());
+  }
+
+  @Test public void insertAfterNodeMiddle() {
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(5);
+    linkedList.insert(10);
+    linkedList.insert(15);
+    linkedList.insertAfter(10, 12);
+    assertEquals("{ 15 } -> { 10 } -> { 12 } -> { 5 } -> null", linkedList.toString());
+  }
+
+  @Test public void insertAfterLastNode() {
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(5);
+    linkedList.insert(10);
+    linkedList.insertAfter(5, 7);
+    assertEquals("{ 10 } -> { 5 } -> { 7 } -> null", linkedList.toString());
+  }
+
+
+
+
+ } //last bracket
 
 

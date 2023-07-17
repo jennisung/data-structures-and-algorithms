@@ -36,6 +36,9 @@ public class LinkedList
     }
 
 
+
+
+
     //linked-list-insertion (append, insert before, insert after)
     public void append(int value) {
       Node newNode = new Node(value);
@@ -43,7 +46,9 @@ public class LinkedList
       if (head == null) {
         head = newNode;
       } else {
+
         Node current = head;
+
         while (current.next != null) {
           current = current.next;
         }
@@ -53,7 +58,54 @@ public class LinkedList
 
     }
 
-    @Override
+
+
+  public void insertBefore(int prevValue, int newValue) {
+    Node newNode = new Node(newValue);
+    if (head != null) {
+
+      if (head.value == prevValue) {
+        newNode.next = head;
+        head = newNode;
+
+
+        return;
+      }
+
+      Node current = head;
+      while (current.next != null) {
+        if (current.next.value == prevValue) {
+          newNode.next = current.next;
+          current.next = newNode;
+
+          return;
+        }
+        current = current.next;
+
+      } }
+    }
+
+
+
+  public void insertAfter(int prevValue, int newValue) {
+    Node newNode = new Node(newValue);
+
+    if (head != null) {
+      Node current = head;
+
+
+      while (current != null) {
+        if (current.value == prevValue) {
+          newNode.next = current.next;
+          current.next = newNode;
+          return;
+        }
+        current = current.next;
+      }
+    }}
+
+
+  @Override
     public String toString() {
         StringBuilder stringRepresentation = new StringBuilder();
         Node currentNode = head;
