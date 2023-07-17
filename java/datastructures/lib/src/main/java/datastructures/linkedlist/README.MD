@@ -12,10 +12,13 @@ arguments: value, new value
 adds a new node with the given new value immediately after the first node that has the value specified
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Linked List Insert](./linkedlistinsert.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+BIG-O
+Append: Time: O(n) Space: O(1)
+Insert Before: Time: O(n) Space: O(1)
+Insert After: Time: O(n) Space: O(1)
 
 ## Solution
 [LinkedList & LinkedList insertions](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
