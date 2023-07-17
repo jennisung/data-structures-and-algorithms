@@ -1,8 +1,8 @@
 # Data Structures and Algorithms
  
 ## Code Challenge 06
-* [LinkedList & LinkedList insertions](lib/src/main/java/datastructures/linkedlist/LinkedList.java) 
-* [Link to LinkedList Tests](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
+* [LinkedList & LinkedList insertions](./src/main/java/datastructures/linkedlist/LinkedList.java) 
+* [Link to LinkedList Tests](./src/test/java/datastructures/linkedlist/LinkedListTest.java)
 
 
 ## Language: `Java`
