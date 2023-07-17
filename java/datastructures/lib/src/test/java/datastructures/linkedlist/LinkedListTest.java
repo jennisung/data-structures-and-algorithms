@@ -42,7 +42,6 @@ public class LinkedListTest
   }
 
 
-
   @Test void includingValue() {
     LinkedList linkedList = new LinkedList();
     linkedList.insert(5);
@@ -69,5 +68,17 @@ public class LinkedListTest
     assertEquals("{ 15 } -> { 10 } -> { 5 } -> null", linkedList.toString());
   }
 
+  @Test
+  public void appendNodeToEnd() {
+    LinkedList linkedList = new LinkedList();
+    linkedList.insert(5);
+    linkedList.insert(10);
+    linkedList.append(15);
+    assertEquals("{ 10 } -> { 5 } -> { 15 } -> null", linkedList.toString());
+  }
+
+
 
 }
+
+

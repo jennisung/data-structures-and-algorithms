@@ -35,6 +35,24 @@ public class LinkedList
         return false;
     }
 
+
+    //linked-list-insertion (append, insert before, insert after)
+    public void append(int value) {
+      Node newNode = new Node(value);
+
+      if (head == null) {
+        head = newNode;
+      } else {
+        Node current = head;
+        while (current.next != null) {
+          current = current.next;
+        }
+
+        current.next = newNode;
+      }
+
+    }
+
     @Override
     public String toString() {
         StringBuilder stringRepresentation = new StringBuilder();
