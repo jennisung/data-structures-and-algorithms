@@ -9,10 +9,12 @@ Write the following method for the Linked List class:
 * You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![LinkedList Kth](./linkedlistkth.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Time: O(n) : liberal time complexity
+Space: O(1): because the method uses extra space (?)
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+[Lab07-LinkedListKth](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
