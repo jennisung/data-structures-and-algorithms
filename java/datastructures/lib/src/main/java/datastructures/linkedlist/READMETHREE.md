@@ -1,6 +1,7 @@
 # Code Challenge 08: Zip two linked lists.
 
 ## Feature Tasks
+
 * Write a function called zip lists
 * Arguments: 2 linked lists
 * Return: New Linked List, zipped as noted below
@@ -9,10 +10,14 @@
 * You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![Linked List Zip](./linkedlistzip.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+The zip_lists function has a time complexity
+
+of O(n) and uses constant additional space.
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
