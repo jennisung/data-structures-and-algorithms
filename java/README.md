@@ -6,6 +6,7 @@
 
 
 
+[LinkedList](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
 ## Language: `Java`
 
 ### Folder/Project Setup

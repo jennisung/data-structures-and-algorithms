@@ -1,18 +1,25 @@
-# Code Challenge 07
-* Feature Tasks
-*
-Write the following method for the Linked List class:
-
-* kth from end
-* argument: a number, k, as a parameter.
-* Return the node’s value that is k places from the tail of the linked list.
-* You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+# Code Challenge Linked List Insertion
+## Feature Tasks
+Write the following methods for the Linked List class:
+**append**
+arguments: new value
+adds a new node with the given value to the end of the list
+**insert before**
+arguments: value, new value
+adds a new node with the given new value immediately before the first node that has the value specified
+**insert after**
+arguments: value, new value
+adds a new node with the given new value immediately after the first node that has the value specified
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Linked List Insert](./linkedlistinsert.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+BIG-O
+Append: Time: O(n) Space: O(1)
+Insert Before: Time: O(n) Space: O(1)
+Insert After: Time: O(n) Space: O(1)
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+[LinkedList & LinkedList insertions](lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+[Link to LinkedList Tests](lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
