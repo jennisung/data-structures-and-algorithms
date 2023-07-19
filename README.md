@@ -22,5 +22,7 @@ To run your tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
 ### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+ 
+## Code Challenge 06
+* [LinkedList & LinkedList insertions](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+* [Link to LinkedList Tests](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)

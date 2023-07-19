@@ -9,3 +9,8 @@
 Location: `codechallenges/linkedlist/LinkedListChallenges`
 
 Method: `linkedListChallenge06()`
+
+ 
+## Code Challenge 06
+* [LinkedList & LinkedList insertions](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/linkedlist/LinkedList.java)
+* [Link to LinkedList Tests](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/linkedlist/LinkedListTest.java)
