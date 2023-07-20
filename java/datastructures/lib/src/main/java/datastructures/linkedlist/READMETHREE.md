@@ -14,10 +14,10 @@
 ![Linked List Zip](./linkedlistzip.png)
 
 ## Approach & Efficiency
+I guess to approach this code challenge we needed to create  function that takes two linked lists and combines them by alternating their nodes, and returns a new linked list with this interlocking nodes.
 
 The zip_lists function has a time complexity
 
 of O(n) and uses constant additional space.
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
