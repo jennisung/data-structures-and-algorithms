@@ -26,4 +26,4 @@ Returns: Boolean indicating whether or not the stack is empty.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+[Stack Solution](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/stack)

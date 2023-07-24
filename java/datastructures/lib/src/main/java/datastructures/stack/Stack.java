@@ -9,23 +9,42 @@ public class Stack<T>
   public void push(T valueToPush)
   {
     // TODO: implement me
+    Node<T> newNode = new Node<>(valueToPush);
+    newNode.next = top;
+    top = newNode;
   }
 
   public T pop()
   {
     // TODO: implement me
-    return null;
+    if (isEmpty()) {
+      throw new RuntimeException("Empty Stack.");
+    }
+
+    Node<T> poppedNode = top;
+    top = top.next;
+    poppedNode.next = null;
+    return poppedNode.value;
+
   }
+
+
 
   public T peek()
   {
     // TODO: implement me
-    return null;
+    if(isEmpty()) {
+      throw new RuntimeException("Empty Stack");
+    }
+    return top.value;
   }
+
+
+
 
   public boolean isEmpty()
   {
     // TODO: implement me
-    return false;
+    return top == null;
   }
 }
