@@ -19,10 +19,9 @@ is empty
 Arguments: none
 Returns: Boolean indicating whether or not the queue is empty
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+[Queue Solution](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/queue)
