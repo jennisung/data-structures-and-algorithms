@@ -18,6 +18,9 @@ If pref is not "dog" or "cat" then return null.
 ![Animal Shelter](animalshelter.png)
 
 ## Approach & Efficiency
+
+The inclass review helped me approach this code challenge
+
 * Enqueue:
 * Time O(1)
 * Space O(1)
@@ -25,4 +28,3 @@ If pref is not "dog" or "cat" then return null.
 * Time O(1)
 * Space O(1)
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
