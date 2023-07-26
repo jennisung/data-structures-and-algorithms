@@ -12,8 +12,12 @@ representing whether or not the brackets in the string are balanced
 * Curly Brackets : {}
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Stack and Queue Brackets](./stackqueuebrackets.png)
 
 ## Approach & Efficiency
+
+I guess my first approach to this problem is that we know we need to check if the bracket pairs match, so we need to loop through the characters.
 The big O complexity is O(n) for both time and space.
+
 ## Solution
+* [ Multi-bracket Validation](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/codechallenges/linkedlist/stackqueuebrackets.java)
