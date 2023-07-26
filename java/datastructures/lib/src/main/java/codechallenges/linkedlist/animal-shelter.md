@@ -15,10 +15,14 @@ Return: either a dog or a cat, based on preference.
 If pref is not "dog" or "cat" then return null.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Animal Shelter](animalshelter.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+* Enqueue:
+* Time O(1)
+* Space O(1)
+* Dequeue
+* Time O(1)
+* Space O(1)
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
