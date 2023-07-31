@@ -23,7 +23,8 @@ Contains
 <!-- Embedded whiteboard image -->
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+BigO
 
 ## Solution
 * [ Binary Tree and BST Implementation ](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree )
