@@ -28,3 +28,4 @@ Method: `linkedListChallenge06()`
 ## Code Challenge 15
 * [ Binary Tree and BST Implementation ](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree )
 
+## Code Challenge 16

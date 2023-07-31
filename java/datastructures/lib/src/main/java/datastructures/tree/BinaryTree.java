@@ -1,7 +1,9 @@
 package datastructures.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class BinaryTree<T extends Comparable<? super T>>
 {
@@ -56,5 +58,37 @@ public class BinaryTree<T extends Comparable<? super T>>
       postOrder(curr.rightNode, outputValues);
       outputValues.add(curr.value);
     }
+
   }
+
+
+//  lab16 Find the Maximum Value in a Binary Tree
+
+  public T findMaxValue() {
+    if (root == null) {
+      return null;
+    }
+
+    T maxValue = root.value;
+    Queue<Node<T>> queue = new LinkedList<>();
+    queue.offer(root);
+
+    while (!queue.isEmpty()) {
+      Node<T> curr = queue.poll();
+
+      if (curr.value.compareTo(maxValue) > 0) {
+        maxValue = curr.value;
+      }
+
+      if (curr.leftNode != null) {
+        queue.offer(curr.leftNode);
+      }
+      if (curr.rightNode != null) {
+        queue.offer(curr.rightNode);
+      }
+    }
+
+    return maxValue;
+  }
+
 }
