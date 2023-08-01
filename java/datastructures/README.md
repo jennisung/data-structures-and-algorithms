@@ -29,3 +29,5 @@ Method: `linkedListChallenge06()`
 * [ Binary Tree and BST Implementation ](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree )
 
 ## Code Challenge 16
+* [Find the Maximum Value in a Binary Tree Solution](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java )
+* [Find the Maximum Value in a Binary Tree Test](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
