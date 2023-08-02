@@ -37,3 +37,10 @@ Method: `linkedListChallenge06()`
 
 * [Breadth-first Traversal Solution](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java )
 * [Breadth-first Traversal Test](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
+
+
+## Code Challenge 18
+
+* [FizzBuzz Solution](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
+* [FizzBuzzTest](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
+* [FizzBuzz](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java )

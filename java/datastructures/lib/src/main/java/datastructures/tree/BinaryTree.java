@@ -120,4 +120,54 @@ public class BinaryTree<T extends Comparable<? super T>>
 
 
 
+
+
+// lab 18 fizz-buzz
+public void fizzBuzzTree() {
+  root = applyDivisibilityRules(root);
 }
+
+
+  private Node<T> applyDivisibilityRules(Node<T> node) {
+    if (node == null) {
+      return null;
+    }
+
+    T value = node.value;
+
+
+    if (value instanceof Integer) {
+      int intOfNode = (Integer) value;
+      if (intOfNode % 3 == 0 && intOfNode % 5 == 0) {
+        node.value = (T) "FizzBuzz";
+      } else if (intOfNode % 3 == 0) {
+        node.value = (T) "Fizz";
+      } else if (intOfNode % 5 == 0) {
+        node.value = (T) "Buzz";
+      } else {
+        node.value = (T) String.valueOf(intOfNode);
+      }
+    }
+
+    node.leftNode = applyDivisibilityRules(node.leftNode);
+    node.rightNode = applyDivisibilityRules(node.rightNode);
+
+
+    return node;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
