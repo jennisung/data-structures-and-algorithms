@@ -91,4 +91,33 @@ public class BinaryTree<T extends Comparable<? super T>>
     return maxValue;
   }
 
+
+  //Code Challenge: Class 17
+  public List<T> breadthFirstTraversal() {
+    List<T> outputValues = new ArrayList<>();
+    if (root == null) {
+      return outputValues;
+    }
+
+    Queue<Node<T>> queue = new LinkedList<>();
+    queue.add(root);
+
+    while (!queue.isEmpty()) {
+      Node<T> curr = queue.poll();
+      outputValues.add(curr.value);
+
+      if (curr.leftNode != null) {
+        queue.add(curr.leftNode);
+      }
+
+      if (curr.rightNode != null) {
+        queue.add(curr.rightNode);
+      }
+    }
+
+    return outputValues;
+  }
+
+
+
 }

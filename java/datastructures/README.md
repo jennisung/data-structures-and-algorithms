@@ -31,3 +31,9 @@ Method: `linkedListChallenge06()`
 ## Code Challenge 16
 * [Find the Maximum Value in a Binary Tree Solution](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java )
 * [Find the Maximum Value in a Binary Tree Test](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
+
+
+## Code Challenge 17
+
+* [Breadth-first Traversal Solution](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java )
+* [Breadth-first Traversal Test](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
