@@ -4,14 +4,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class BinaryTreeTest {
   BinaryTree<Integer> tree;
-
   @BeforeEach
   void setUp() {
     tree = new BinaryTree<>();
@@ -19,6 +17,8 @@ class BinaryTreeTest {
     tree.root.leftNode = new Node<>(2);
     tree.root.rightNode = new Node<>(5);
   }
+
+
 
   @Test
   void preOrderTraversal() {
@@ -38,52 +38,17 @@ class BinaryTreeTest {
     assertArrayEquals(postOrder.toArray(), tree.postOrderTraversal());
   }
 
-
-
-//  lab 16 test
-//  @Test void findMaxValue() {
-//    BinaryTree<Integer> tree = new BinaryTree<>();
-//    tree.root = new Node<>(2);
-//    tree.root.leftNode = new Node<>(7);
-//    tree.root.rightNode = new Node<>(5);
-//    tree.root.leftNode.leftNode = new Node<>(2);
-//    tree.root.leftNode.rightNode = new Node<>(6);
-//    tree.root.rightNode.rightNode = new Node<>(9);
-//    tree.root.leftNode.rightNode.leftNode = new Node<>(5);
-//    tree.root.leftNode.rightNode.rightNode = new Node<>(11);
-//    tree.root.rightNode.rightNode.rightNode = new Node<>(4);
-//
-//    // output 11
-//    Integer expectedMax = 11;
-//    List<Integer> actualMax = tree.findMaxValue();
-//
-//    assertEquals(Collections.singletonList(expectedMax), actualMax);
-//  }
-//
-//  private void assertEquals(List<Integer> expectedMax, List<Integer> actualMax) {
-//  }
-
   @Test
-  void breadthFirstTraversal() {
-    BinaryTree<Integer> tree = new BinaryTree<>();
-    tree.root = new Node<>(2);
-    tree.root.leftNode = new Node<>(7);
-    tree.root.rightNode = new Node<>(5);
-    tree.root.leftNode.leftNode = new Node<>(2);
-    tree.root.leftNode.rightNode = new Node<>(6);
-    tree.root.leftNode.rightNode.leftNode = new Node<>(5);
-    tree.root.leftNode.rightNode.rightNode = new Node<>(11);
-    tree.root.rightNode.rightNode = new Node<>(9);
-    tree.root.rightNode.rightNode.leftNode = new Node<>(4);
+  void testFizzBuzzTree() {
+    tree.fizzBuzzTree();
 
-    List<Integer> expectedResult = Arrays.asList(2, 7, 5, 2, 6, 9, 5, 11, 4);
-    List<Integer> actualResult = tree.breadthFirstTraversal();
+    List<String> expectedFizzBuzz = Arrays.asList("4", "2", "Buzz");
+    List<String> actualFizzBuzz = Arrays.asList(
+      tree.root.value.toString(),
+      tree.root.leftNode.value.toString(),
+      tree.root.rightNode.value.toString()
+    );
 
-    assertEquals(expectedResult, actualResult);
+    assertArrayEquals(expectedFizzBuzz.toArray(), actualFizzBuzz.toArray());
   }
-
-  private void assertEquals(List<Integer> expectedResult, List<Integer> actualResult) {
-  }
-
-
 }
