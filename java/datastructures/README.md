@@ -44,3 +44,6 @@ Method: `linkedListChallenge06()`
 * [FizzBuzz Solution](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java)
 * [FizzBuzzTest](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/test/java/datastructures/tree/BinaryTreeTest.java)
 * [FizzBuzz](https://github.com/jennisung/data-structures-and-algorithms/blob/main/java/datastructures/lib/src/main/java/datastructures/tree/BinaryTree.java )
+
+## Code Challenge 32
+* [Tree Intersection](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree )
