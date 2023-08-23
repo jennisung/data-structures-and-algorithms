@@ -47,3 +47,6 @@ Method: `linkedListChallenge06()`
 
 ## Code Challenge 32
 * [Tree Intersection](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/datastructures/tree )
+
+## Code Challenge 33
+* [HashMap Left Join](https://github.com/jennisung/data-structures-and-algorithms/tree/main/java/datastructures/lib/src/main/java/codechallenges/linkedlist/leftJoin )
