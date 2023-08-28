@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class GraphTest {
   private Graph<String> graph;
@@ -75,4 +76,27 @@ public class GraphTest {
     assertEquals(1, graph.size());
     assertEquals(1, graph.getNeighbors(vertexA).size());
   }
+
+
+  @Test
+  public void breadthFirstTraversalTest() {
+    Vertex<String> vertexA = graph.addVertex("A");
+    Vertex<String> vertexB = graph.addVertex("B");
+    Vertex<String> vertexC = graph.addVertex("C");
+    Vertex<String> vertexD = graph.addVertex("D");
+
+    graph.addEdge(vertexA, vertexB);
+    graph.addEdge(vertexA, vertexC);
+    graph.addEdge(vertexB, vertexD);
+
+    List<Vertex<String>> traversalResult = graph.breadthFirstTraversal(vertexA);
+
+    assertEquals(4, traversalResult.size());
+
+    assertTrue(traversalResult.contains(vertexA));
+    assertTrue(traversalResult.contains(vertexB));
+    assertTrue(traversalResult.contains(vertexC));
+    assertTrue(traversalResult.contains(vertexD));
+  }
+
 }
