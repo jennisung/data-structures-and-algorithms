@@ -36,7 +36,7 @@ public class GraphTest {
   }
 
   @Test
-  public void allVerticesTest() {
+  void allVerticesTest() {
     Vertex<String> vertexA = graph.addVertex("A");
     Vertex<String> vertexB = graph.addVertex("B");
     Vertex<String> vertexC = graph.addVertex("C");
@@ -49,7 +49,7 @@ public class GraphTest {
   }
 
   @Test
-  public void allNeighborsTest() {
+  void allNeighborsTest() {
     Vertex<String> vertexA = graph.addVertex("A");
     Vertex<String> vertexB = graph.addVertex("B");
     graph.addEdge(vertexA, vertexB, 2);
@@ -61,7 +61,7 @@ public class GraphTest {
   }
 
   @Test
-  public void sizeTest() {
+  void sizeTest() {
     Vertex<String> vertexA = graph.addVertex("A");
     Vertex<String> vertexB = graph.addVertex("B");
 
@@ -69,7 +69,7 @@ public class GraphTest {
   }
 
   @Test
-  public void nodeAndEdgeTest() {
+  void nodeAndEdgeTest() {
     Vertex<String> vertexA = graph.addVertex("A");
     graph.addEdge(vertexA, vertexA, 1);
 
