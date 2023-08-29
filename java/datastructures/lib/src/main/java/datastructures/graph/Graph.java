@@ -8,10 +8,14 @@ import datastructures.graph.Vertex;
 public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<T>>  // just in case you have Comparable data structures
 {
   public HashMap<Vertex<T>, LinkedList<Edge<T>>> adjacencyLists;
-  private int numberOfVertices = 0;
+  public int numberOfVertices = 0;
 
   public Graph(int maxNumberOfVertices) {
     adjacencyLists = new HashMap<>(maxNumberOfVertices);
+  }
+
+  public Graph() {
+
   }
 
   public Vertex<T> addVertex(T value)  // addNode()
