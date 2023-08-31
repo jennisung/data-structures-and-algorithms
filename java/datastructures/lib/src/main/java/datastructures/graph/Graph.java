@@ -94,6 +94,33 @@ public class Graph<T extends Comparable<? super T>> implements Comparable<Graph<
   }
 
 
+  public void depthFirstHelper(Vertex<T> curr, Set<Vertex<T>> visitedSet, List<Vertex<T>> visitedList) {
+    if (curr == null || visitedSet.contains(curr)) {
+      return;
+    }
+
+    visitedSet.add(curr);
+    visitedList.add(curr);
+
+    for (Edge<T> edge : adjacencyLists.get(curr)) {
+      Vertex<T> neighbor = edge.destination;
+      depthFirstHelper(neighbor, visitedSet, visitedList);
+    }
+  }
+
+  public List<Vertex<T>> depthFirst(Vertex<T> start) {
+    List<Vertex<T>> output = new ArrayList<>();
+    if (!adjacencyLists.containsKey(start)) {
+      return output;
+    }
+
+    Set<Vertex<T>> visitedSet = new HashSet<>();
+    depthFirstHelper(start, visitedSet, output);
+    return output;
+  }
+
+
+
   @Override
   public int compareTo(Graph<T> o) {
     throw new UnsupportedOperationException("Graph does not implement compareTo()");

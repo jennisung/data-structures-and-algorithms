@@ -99,4 +99,25 @@ public class GraphTest {
     assertTrue(traversalResult.contains(vertexD));
   }
 
+  @Test
+  public void depthFirstTest() {
+    Vertex<String> a = graph.addVertex("A");
+    Vertex<String> b = graph.addVertex("B");
+    Vertex<String> c = graph.addVertex("C");
+    Vertex<String> d = graph.addVertex("D");
+    Vertex<String> e = graph.addVertex("E");
+
+    graph.addEdge(a, b);
+    graph.addEdge(a, c);
+    graph.addEdge(b, d);
+    graph.addEdge(b, e);
+
+    List<Vertex<String>> output = graph.depthFirst(a);
+
+    List<Vertex<String>> expected = List.of(a, b, d, e, c);
+
+    assertEquals(expected, output);
+  }
+
+
 }
