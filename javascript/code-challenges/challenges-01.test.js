@@ -85,12 +85,24 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 
 const greeting = (word) => {
   // Solution code here...
+  return word.toUpperCase() + "!";
 
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
+  let modifiedStr = [];
+
+  words.forEach((word) => {
+    modifiedStr.push(callback(word));
+  });
+  return modifiedStr;
 };
+
+//Explanation:
+// The 'greeting' function converts the given string to uppercase and then appends an exclamation mark to the end.
+// The 'speaker' function uses the forEach method to apply a callback function to each string in an array
+// Then returns a new array containing the modified strings.
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
