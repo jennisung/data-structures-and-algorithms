@@ -122,11 +122,21 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
+
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
+
+//Explanation:
+//The "addValues" function appends a given value to a specified array.
+// The "addNumbers" function adds rth specific number to an array for a specified number of times using a provided callback function.
 
 /* ------------------------------------------------------------------------------------------------
 
