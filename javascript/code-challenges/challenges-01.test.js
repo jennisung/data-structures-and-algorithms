@@ -193,7 +193,37 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let output = [];
+  arr.forEach((num) => {
+    if (num % 3 === 0 && num % 5 === 0) {
+      output.push("Fizz Buzz");
+    } else if (num % 3 === 0) {
+      output.push("Fizz");
+    } else if (num % 5 === 0) {
+      output.push("Buzz");
+    } else {
+      output.push(num);
+    }
+  });
+  return output;
 };
+
+/* ------------------------------------------------------------------------------------------------
+
+Explanation:
+This function fizzbuzz takes in an array of numbers and returns a new array based on the rules below.
+  - If a number is divisible by 3, add the word "Fizz" to the output array.
+  - If the number is divisible by 5, add the word "Buzz" to the output array.
+  - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
+  - Otherwise, add the number to the output array.
+ It iterates through the input array, checks each number, and appends the corresponding string or number to the output array accordingly.
+
+------------------------------------------------------------------------------------------------ */
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
