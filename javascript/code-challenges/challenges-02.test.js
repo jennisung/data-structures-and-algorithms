@@ -36,7 +36,24 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 
 const addOne = (arr) => {
   // Solution code here...
+  return arr.map((num) => num + 1);
+
 };
+
+
+
+
+/* ------------------------------------------------------------------------------------------------
+Explanation:
+
+1- Map method is array arr.
+2- For each element num in the array arr, the arrow function (num) => num + 1 is applied. Which takes the current value of num and  incease increments it by 1.
+3- The map method creates a new array with the modified values and returns this new array.
+4- Last, addOne function returns the new array with each value incremented by 1.
+
+
+------------------------------------------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
