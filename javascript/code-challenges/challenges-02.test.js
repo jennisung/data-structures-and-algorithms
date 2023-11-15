@@ -63,7 +63,22 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
+  const newArray = (arr) => arr.map(str => str + '?');
+
 };
+
+
+/* ------------------------------------------------------------------------------------------------
+Explanation:
+
+1- "addQuestion" function takes an array of strings (arr)
+2- then using the map method to iterate over each string
+3- then append a question mark character to each one.
+4- End result is a new array where each string from the original
+ array is append with a question mark.
+
+ 
+------------------------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
