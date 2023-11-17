@@ -77,7 +77,7 @@ Explanation:
 4- End result is a new array where each string from the original
  array is append with a question mark.
 
- 
+
 ------------------------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,7 +92,24 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArray.push(Math.pow(2, arr[i]));
+  }
+  return newArray;
 };
+
+
+
+/* ------------------------------------------------------------------------------------------------
+
+Explanation:
+This function uses a for-loop to iterate over each element in the input array.
+Then it raises 2 to the power of each element using Math.pow(2, arr[i]), appending the result to a new array (newArray),
+which is then returned.
+
+------------------------------------------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
