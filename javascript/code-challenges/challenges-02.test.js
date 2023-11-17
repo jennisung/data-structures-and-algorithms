@@ -102,6 +102,7 @@ const forLoopTwoToThe = (arr) => {
 
 
 /* ------------------------------------------------------------------------------------------------
+
 Explanation:
 This function uses a for-loop to iterate over each element in the input array.
 Then it raises 2 to the power of each element using Math.pow(2, arr[i]), appending the result to a new array (newArray),
