@@ -119,7 +119,25 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+
+  let newArray = [];
+  arr.forEach((num) => {
+    newArray.push(Math.pow(2, num));
+  });
+  return newArray;
 };
+
+
+/* ------------------------------------------------------------------------------------------------
+
+Explanation:
+1- Step 1: Iterate through each element in the input array.
+Use the forEach method to iterate through each element (num) in the input array (arr).
+2- Step 2: Calculate 2 to the power of each element and push the result into a new array
+3- Step 3: Return the final array.
+
+------------------------------------------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
